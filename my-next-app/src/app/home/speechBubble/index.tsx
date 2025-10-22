@@ -56,7 +56,7 @@ const SpeechBubble = () => {
               } as React.CSSProperties
             }
           >
-            {item.text}
+            <h1>{item.text}</h1>
 
             <span
               className={`

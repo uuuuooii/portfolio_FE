@@ -16,11 +16,11 @@ const Header = () => {
           return (
           <li key={item.id}>
             <Link href={item.href} 
-             className={`font-semibold flex items-center gap-2 px-4 py-2 rounded-xl border transition-all 
+             className={`font-semibold flex items-center gap-2 px-4 py-2 border-b transition-all 
                 ${
                   isActive
-                    ? "text-white border-gray-600/60 bg-gray-800/40"
-                    : "text-gray-400 hover:text-white hover:border-gray-600/60 hover:bg-gray-800/40 border-transparent"
+                    ? "text-white border-gray-600/60"
+                    : "text-gray-400 hover:text-white hover:border-gray-600/60 border-transparent"
                 }`}>
               {item.name}
             </Link>

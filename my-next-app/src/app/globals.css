@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Slussen Variable';
+  src: url('/slussen-mono-trial/Slussen-Mono-Bold.otf') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,6 +31,8 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 @keyframes blink {
   0% {
