@@ -1,11 +1,17 @@
-const Element = () => {
-  return (
-    <div>
-      <p className="text-xs">2020 - 2020</p>
-      <p className="text-xl">Amazon IVS</p>
-      <p>Software Engineer</p>
+import ProjectProps from "@/lib/api/project/dto"
 
-      <img src="studio-img.ef098bc8.png" alt="" />
+interface ElementProps {
+  item: ProjectProps
+}
+
+const Element = ({item}:ElementProps) => {
+  return (
+    <div className="pt-[2rem]">
+      <p className="text-xs text-[rgb(161_161_170)]">{item.date}</p>
+      <p className="text-xl text-[rgb(255_255_255)]">{item.company}</p>
+      {/* <p>{item.role}</p> */}
+
+      <img className="pt-[1rem]" src={item.img} alt="img" />
     </div>
   )
 }
