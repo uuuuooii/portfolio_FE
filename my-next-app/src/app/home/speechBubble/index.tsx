@@ -16,7 +16,21 @@ const SpeechBubble = () => {
   }, [idx, done]);
 
   return (
-    <div className="relative top-[24%] left-[72%] flex gap-2 flex-col items-end p-6 [&>li]:mr-auto">
+    <ul className="
+      sm:relative 
+      sm:top-[24%] 
+      sm:left-[72%] 
+      sm:[&>li]:mr-auto
+      flex 
+      gap-2 
+      flex-col 
+      sm:items-end 
+      items-center
+      p-6 
+      [position:unset] 
+      top-auto  
+      left-auto          
+    ">
       {words.map((item, i) => {
         const isActive = i === idx;
         const isPast = i < idx;
@@ -34,7 +48,10 @@ const SpeechBubble = () => {
             key={item.id}
             className={`
               font-medium
-              relative list-none inline-block max-w-[80%]
+              relative 
+              list-none 
+              inline-block 
+              max-w-[80%]
               rounded-2xl px-4 py-1 text-black shadow
               transition-all duration-700 ease-in-out origin-bottom-right
               [will-change:transform]
@@ -56,19 +73,28 @@ const SpeechBubble = () => {
               } as React.CSSProperties
             }
           >
-            <h1>{item.text}</h1>
+            <h1 className="font-medium">{item.text}</h1>
 
             <span
               className={`
-                pointer-events-none absolute -left-1.5 bottom-2
-                h-0 w-0 border-y-6 border-r-8 border-y-transparent
+                pointer-events-none 
+                absolute 
+                sm:-left-1.5 
+                sm:bottom-2
+                [left:calc(var(--spacing)*2.5)]
+                [bottom:calc(var(--spacing)*-1)]
+                h-0 
+                w-0 
+                border-y-6 
+                border-r-8 
+                border-y-transparent
                 ${isActive ? "border-r-lime-400" : isPast ? "border-r-lime-300" : ""}
               `}
             />
           </li>
         );
       })}
-    </div>
+    </ul>
   );
 };
 

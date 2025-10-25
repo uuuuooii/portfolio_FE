@@ -36,7 +36,7 @@ const Character = () => {
                 absolute
                 left-1/2
                 -translate-x-1/2
-                bottom-[-15%]  
+                bottom-[0%]  
                 w-[160px]
                 rounded-full
                 shadow-[0_0_40px_10px_rgba(100,200,255,0.6)]
@@ -52,12 +52,13 @@ const Character = () => {
                 width={390}
                 height={237}
                 className="
+                max-w-[unset]
                 w-[250px]
                 left-1/2
                 -translate-x-1/2
                 relative
                 inset-0
-                translate-y-[115%]
+                translate-y-[100%]
                 transform
                 [perspective-origin:center_bottom]
                 "
