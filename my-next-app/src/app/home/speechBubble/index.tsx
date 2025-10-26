@@ -67,9 +67,9 @@ const SpeechBubble = () => {
                 animationDelay: `${delay}s`,
                 animationDuration: `${duration}s`,
                 // CSS 변수로 떠오르는 높이/스케일 미세 조절
-                ['--y' as any]: `${liftPx}px`,
-                ['--s' as any]: s1,
-                ['--s2' as any]: s2,
+                ['--y']: `${liftPx}px`,
+                ['--s']: s1,
+                ['--s2']: s2,
               } as React.CSSProperties
             }
           >

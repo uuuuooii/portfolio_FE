@@ -1,4 +1,4 @@
-import SpeechBubble from "../speechBubble"
+import Image from "next/image"
 
 const Character = () => {
   return (
@@ -46,7 +46,7 @@ const Character = () => {
                 "
             />
 
-            <img
+            <Image
                 src="/labtop.png"
                 alt=""
                 width={390}

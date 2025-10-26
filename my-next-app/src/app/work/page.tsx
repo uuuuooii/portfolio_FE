@@ -11,7 +11,7 @@ const Work = () => {
 
   useEffect(()=> {
     const getData = async() => {
-      let res = await getProject()
+      const res = await getProject()
       setProjectData(res)
     }
     getData()

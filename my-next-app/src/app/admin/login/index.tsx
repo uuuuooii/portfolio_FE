@@ -1,5 +1,5 @@
 import useInput from "@/lib/hooks/input"
-import { Dispatch, SetStateAction, useState } from "react"
+import { Dispatch, SetStateAction } from "react"
 
 interface LoginProps {
     setIsLogin: Dispatch<SetStateAction<boolean>>
