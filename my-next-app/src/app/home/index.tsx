@@ -4,7 +4,7 @@ import SpeechBubble from "./speechBubble"
 const Home = () => {
   return (
     <section className="
-    h-[calc(100vh-94px)] 
+    h-[calc(100vh-169px)] 
     flex 
     justify-center
     align-center

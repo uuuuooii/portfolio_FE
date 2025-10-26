@@ -34,7 +34,7 @@ const Work = () => {
       <div className="
       max-w-[100%]
       ">
-        <h2 className="text-2xl font-extrabold">Selected Works</h2>
+        <h2 className="text-[rgb(228_228_231)] text-2xl font-extrabold">Selected Works</h2>
         <h3 className="text-[rgb(161_161_170)]">
           Software Engineer with 3 years of experience focused on frontend,<br />
           SEO optimization, and scalable web apps. <br />
