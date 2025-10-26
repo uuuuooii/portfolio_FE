@@ -1,1 +1,1 @@
-export const PROJECT_URL = `/api/projects`;
+export const PROJECT_URL = `http://localhost:3001/api/projects`;
